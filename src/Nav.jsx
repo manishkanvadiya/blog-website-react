@@ -5,7 +5,7 @@ const Nav = ({ search, setSearch }) => {
   return (
     <nav className="flex items-center gap-5">
       <form onSubmit={(e) => e.preventDefault()}>
-        <label htmlFor="search" className="mr-4">Search Posts</label>
+        {/* <label htmlFor="search" className="mr-4">Search Posts</label> */}
         <input
           id="search"
           placeholder="Search Posts"
@@ -16,13 +16,13 @@ const Nav = ({ search, setSearch }) => {
         />
       </form>
       <ul className="list-none flex items-center gap-4">
-        <li className="">
+        <li className="hover:underline">
           <Link to="/">Home</Link>
         </li>
-        <li>
+        <li className="hover:underline " >
           <Link to="/post">Add Post</Link>
         </li>
-        <li>
+        <li className="hover:underline " >
           <Link to="/about">About</Link>
         </li>
       </ul>

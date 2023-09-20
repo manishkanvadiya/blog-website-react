@@ -14,7 +14,7 @@ const PostPage = ({ posts, handleDelete }) => {
             </h2>
             <div className="text-sm text-black-100">{post.datetime}</div>
             <div className="text-zinc-500 my-4">{post.body}</div>
-            <button className="bg-red-500 px-4 py-2 text-white rounded-md" onClick={() => handleDelete(post.id)}>Delete Post</button>
+            <button className="bg-red-500 px-4 py-2 text-white rounded-sm" onClick={() => handleDelete(post.id)}>Delete Post</button>
             <Link to="/" className="ml-3 text-blue-500">Back to home</Link>
           </>
         )}
